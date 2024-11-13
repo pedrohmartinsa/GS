@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <>
-      <div className=" flex justify-between p-4">
+      <div className="relative flex justify-between items-center p-4 bg-primary text-quaternary">
         <Link to='/'>Nome</Link>
 
         <div className="flex flex-col">
@@ -28,7 +28,7 @@ export default function Header() {
             <AnimatePresence>
             {isOpen && (
                 <motion.div
-                className="flex flex-col justify-end items-center mr-7 w-full gap-4 bg-black text-white"
+                className="absolute left-0 top-14 flex flex-col items-center mr-7 w-[100vw] gap-4 bg-primary text-quaternary"
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 60, opacity: 1, scale: 2 }}
                 exit={{ y: -100, opacity: 0, scale: 1 }}
