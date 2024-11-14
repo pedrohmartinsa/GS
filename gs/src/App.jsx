@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom"
 import { AnimatePresence, motion } from "framer-motion";
 import Header from "./components/Header"
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             <Outlet />
+            <Footer/>
           </motion.div>
       </AnimatePresence>
     </>
