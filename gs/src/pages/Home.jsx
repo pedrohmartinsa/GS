@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { GoPlus } from "react-icons/go";
+import { MdOutlineExpandLess } from "react-icons/md";
 import sustainable_energy from './assets/sustainable-energy.png'
+import { AnimatePresence, motion } from "framer-motion";
+
 
 export default function Home() {
+
     return(
         <>
             <main className="flex flex-col justify-center items-center h-screen">
@@ -17,22 +22,61 @@ export default function Home() {
                 </div>
                 
                 <div className="flex flex-col items-center bg-tertiary w-full">
-                    <div className="flex items-center h-12 w-52 border-2 rounded-lg border-secondary">
-                        <div className="flex w-full justify-between items-center p-5">
-                            <h3 className="text-2xl">Missão</h3>
-                            <GoPlus size={30}/>
-                        </div>
-                    </div>
+                    
+                    <CardAnimation
+                    title='Missão'
+                    text='Pedro Henrique Martins Alves dos Santos Pereira'
+                    />
 
-                    <div>
-                        <h3>Visão</h3>
-                    </div>
+                    <CardAnimation 
+                    title='Visão'
+                    text='Pedro Henrique Martins Alves dos Santos Pereira José Corderio'
+                    />
 
-                    <div>
-                        <h3>Valores</h3>
-                    </div>
+                    <CardAnimation 
+                    title='Valores'
+                    text='Pedro Henrique Martins Alves dos Santos Pereira José Corderio'
+                    />
                 </div>
             </main>
+        </>
+    )
+}
+
+function CardAnimation( {title, text} ) {
+
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toogleCard = () => {
+        setIsOpen(!isOpen)
+    }
+
+    return (
+        <>
+            <div className={`flex items-center flex-wrap border-2 rounded-lg border-secondary ${isOpen ? 'w-72' : 'w-56'}`}>
+                <div className="flex w-full justify-between items-center p-5">
+                    <h3 className={`text-2xl transition-transform duration-500 ease-in-out ${isOpen ? 'opacity-70 scale-125 translate-x-4' : 'opacity-100 scale-100 translate-x-0'}`}>
+                        {title}
+                    </h3>
+                    <button 
+                    className= {`self-end transition-transform duration-700 ease-in-out ${isOpen ? "rotate-180 scale-110" : "rotate-0 scale-100"}`}
+                    onClick={toogleCard}>
+                        {isOpen ? <MdOutlineExpandLess size={30}/> : <GoPlus size={30}/> }
+                    </button>
+                </div>
+                <AnimatePresence>
+                    {isOpen && (
+                        <motion.p 
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.4, ease: "easeInOut" }}
+                        className="basis-full text-justify p-6">
+                        {text}
+                        </motion.p>
+                    )}
+                </AnimatePresence>
+            </div>
         </>
     )
 }
