@@ -1,6 +1,4 @@
-import { SlEnergy } from "react-icons/sl";
-import { FaTree } from "react-icons/fa6";
-import { FiPlus } from "react-icons/fi";
+import { GoPlus } from "react-icons/go";
 import sustainable_energy from './assets/sustainable-energy.png'
 
 export default function Home() {
@@ -18,9 +16,12 @@ export default function Home() {
                     </div>
                 </div>
                 
-                <div className="bg-tertiary w-full">
-                    <div className="flex justify-center items-center h-20 w-32 border-2 border-quaternary">
-                        <h3>Missão</h3>
+                <div className="flex flex-col items-center bg-tertiary w-full">
+                    <div className="flex items-center h-12 w-52 border-2 rounded-lg border-secondary">
+                        <div className="flex w-full justify-between items-center p-5">
+                            <h3 className="text-2xl">Missão</h3>
+                            <GoPlus size={30}/>
+                        </div>
                     </div>
 
                     <div>
