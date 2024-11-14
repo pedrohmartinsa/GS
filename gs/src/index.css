@@ -15,6 +15,6 @@
 }
 
 .active {
-  filter: drop-shadow(3px 3px 2px #C4DAD2);
-  transition: filter 0.4s ease-in-out;
+  filter: drop-shadow(1px 1px 1px #C4DAD2);
+  transition: filter 0.2s ease-in-out;
 }

@@ -11,7 +11,7 @@ function NavLinks() {
   return (
     <>
         <NavLink to='about'>Quem somos</NavLink>
-        <NavLink to='products' >Produtos</NavLink>
+        <NavLink to='product' >Produto</NavLink>
         <NavLink to='contact' >Contato</NavLink>
     </>
   )
@@ -29,7 +29,7 @@ export default function Nav() {
     return (
         <>
         <nav className="w-1/3 flex justify-end">
-          <div className="hidden w-full md:flex justify-between">
+          <div className=" hidden w-full md:flex justify-between text-xl md:justify-normal md:gap-10">
               <NavLinks/>
           </div>
           <div className="md:hidden">
@@ -44,7 +44,7 @@ export default function Nav() {
         <AnimatePresence>
           {isOpen && (
             <motion.div 
-            className="md:hidden flex flex-col border-t border-black text-2xl gap-6 items-center basis-full"
+            className="md:hidden flex flex-col text-2xl gap-6 items-center basis-full"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
