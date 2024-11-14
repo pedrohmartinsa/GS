@@ -15,18 +15,37 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home() {
 
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleCard = () => {
+        setIsOpen(!isOpen)
+    }
+
     return(
         <>
             <main className="flex flex-col justify-center items-center h-[100%]">
                 <Introduction/>
                 <CardsAbout/>
-                <div className="">
-                    <div>
+                <div className=" flex flex-col items-center justify-around">
                         <img className="w-52" src={placa} alt="" />
-                        <div>
 
+                        <div className="border-2 p-8 border-secondary hover:border-quaternary transition-colors duration-300 ease-in-out w-72 h-auto">
+                            
+                        <div className={`flex flex-col justify-between items-start transition-all duration-500 ease-in-out overflow-hidden max-h-[600px]`}>
+                            <h2 className={`text-3xl transition-all duration-500 ease-in-out transform ${isOpen ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
+                                Placa Piezoelétrica
+                            </h2>
+                            <p className={`text-lg transition-opacity duration-500 ease-in-out transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                                Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+                            </p>
+                            <button
+                                className={`self-end transition-transform duration-700 ease-in-out ${isOpen ? 'rotate-180 scale-110' : 'rotate-0 scale-100'}`}
+                                onClick={toggleCard}
+                            >
+                                {isOpen ? <MdOutlineExpandLess size={30} /> : <GoPlus size={30} />}
+                            </button>
+                            </div>
                         </div>
-                    </div>
 
                     <ButtonRoute
                     title='Produto'
@@ -95,7 +114,6 @@ function CardAnimation( {title, text} ) {
     return (
         <>
             <div className={`relative flex items-center flex-wrap border-2 rounded-lg border-quaternary gap-8 ${isOpen ? 'w-72' : 'w-56'}`}>
-                <IoEyeOutline className="absolute top-1 left-2" size={isOpen ? 30 : 20}/>
                 <div className="flex w-full justify-between items-center p-5">
                     <h3 className={`text-2xl transition-transform duration-500 ease-in-out ${isOpen ? 'opacity-70 scale-125 translate-y-4 translate-x-4' : 'opacity-100 scale-100 translate-y-0 translate-x-0'}`}>
                         {title}
