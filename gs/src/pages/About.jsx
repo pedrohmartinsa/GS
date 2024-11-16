@@ -5,73 +5,80 @@ import { AnimatePresence, motion } from "framer-motion";
 import { GoPlus } from "react-icons/go";
 import { MdOutlineExpandLess } from "react-icons/md";
 
-
 import { LuSwords } from "react-icons/lu";
 import { MdOutlineDiamond } from "react-icons/md";
 import { IoEyeOutline } from "react-icons/io5";
 
-import { AiFillInstagram } from "react-icons/ai";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaSquareXTwitter } from "react-icons/fa6";
 
 import global from './assets/global.png'
 
 export default function About() {
     return(
         <>
-           <main className="flex flex-col items-center pt-10 pb-10">
-
-
-                <div>
-                    <img className="w-56" src={global} alt="globo em perigo" />
-                    <p>Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    <p></p>
-                </div>
-
+           <main className="flex flex-col items-center gap-4 pt-10 pb-10">
+                <Introduction/>
                 <Name/>
-
-
-
-                <div className="flex flex-col md:flex-row gap-16 mt-10">
-                    <div className="flex flex-col md:justify-between gap-10">
-                        <div className="relative flex flex-col gap-4 items-center w-72 md:h-72 border-2 border-primary rounded-md p-5">
-                            <div className="absolute left-2 top-2"><LuSwords size={30}/></div>
-                            <h3 className="text-4xl">Missão</h3>
-                            <p className="text-justify md:text-lg">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        </div>
-                        <div className="relative flex flex-col gap-4 items-center w-72 border-2 border-primary rounded-md p-5">
-                            <div className="absolute left-2 top-2"><IoEyeOutline size={30}/></div>
-                            <h3 className="text-4xl">Visão</h3>
-                            <p className="text-justify md:text-lg">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        </div>
-                    </div>
-                    <div className="relative flex flex-col gap-4 items-center w-72 md:w-96 border-2 border-primary rounded-md p-5">
-                        <div className="absolute left-2 top-2"><MdOutlineDiamond size={30}/></div>
-                        <h3 className="text-4xl">Valores</h3>
-                        <CardAnimation 
-                        title="Inovação"
-                        text="Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."
-                        />
-                        <CardAnimation 
-                        title="Proatividade"
-                        text="Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."
-                        />
-                        <CardAnimation 
-                        title="Honestidade"
-                        text="Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."
-                        />
-                        <CardAnimation 
-                        title="Respeito"
-                        text="Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."
-                        />
-                    </div>
-                </div>
-
-
+                <MVV/>
            </main>
         </>
     )
 }
+
+function Introduction() {
+    return(
+        <>
+        <div className="flex flex-col md:flex-row gap-6 items-center w-56 md:w-[700px] mb-10">
+            <img className="md:w-72" src={global} alt="globo em perigo" />
+            <div className="flex flex-col gap-6">
+                <p className="text-justify md:text-lg">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                <p>E a solução para isso é a:</p>
+            </div>
+        </div>
+        </>
+    )
+}
+
+function MVV() {
+    return(
+        <>
+            <div className="flex flex-col md:flex-row gap-16 mt-10">
+                <div className="flex flex-col md:justify-between gap-10">
+                    <div className="relative flex flex-col gap-4 items-center w-72 md:h-72 border-2 border-primary rounded-md p-5">
+                        <div className="absolute left-2 top-2"><LuSwords size={30}/></div>
+                        <h3 className="text-4xl">Missão</h3>
+                        <p className="text-justify md:text-lg">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                    <div className="relative flex flex-col gap-4 items-center w-72 border-2 border-primary rounded-md p-5">
+                        <div className="absolute left-2 top-2"><IoEyeOutline size={30}/></div>
+                        <h3 className="text-4xl">Visão</h3>
+                        <p className="text-justify md:text-lg">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                </div>
+                <div className="relative flex flex-col gap-4 items-center w-72 md:w-96 border-2 border-primary rounded-md p-5">
+                    <div className="absolute left-2 top-2"><MdOutlineDiamond size={30}/></div>
+                    <h3 className="text-4xl">Valores</h3>
+                    <CardAnimation 
+                    title="Inovação"
+                    text="Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."
+                    />
+                    <CardAnimation 
+                    title="Proatividade"
+                    text="Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."
+                    />
+                    <CardAnimation 
+                    title="Honestidade"
+                    text="Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."
+                    />
+                    <CardAnimation 
+                    title="Respeito"
+                    text="Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."
+                    />
+                </div>
+            </div>
+        </>
+    )
+}
+
 
 function CardAnimation( {title, text} ) {
 
