@@ -4,20 +4,6 @@ import { IoMdClose } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom"
 
-
-function NavLinks() {
-
-
-  return (
-    <>
-        <NavLink to='about' className="hover:text-slate-100">Quem somos</NavLink>
-        <NavLink to='product' className="hover:text-slate-100">Produto</NavLink>
-        <NavLink to='contact' className="hover:text-slate-100">Contato</NavLink>
-    </>
-  )
-}
-
-
 export default function Nav() {
 
   const [isOpen, setIsOpen] = useState(false)
@@ -56,6 +42,16 @@ export default function Nav() {
         </AnimatePresence>
         </>
     )
+}
+
+function NavLinks() {
+  return (
+    <>
+        <NavLink to='about' className="hover:text-slate-100 transition-colors duration-500 ease-in-out">Quem somos</NavLink>
+        <NavLink to='product' className="hover:text-slate-100 transition-colors duration-500 ease-in-out">Produto</NavLink>
+        <NavLink to='contact' className="hover:text-slate-100 transition-colors duration-500 ease-in-out">Contato</NavLink>
+    </>
+  )
 }
 
 

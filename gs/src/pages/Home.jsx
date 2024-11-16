@@ -3,9 +3,7 @@ import { NavLink } from "react-router-dom";
 import { GoPlus } from "react-icons/go";
 import { MdOutlineExpandLess } from "react-icons/md";
 
-import { LuSwords } from "react-icons/lu";
-import { MdOutlineDiamond } from "react-icons/md";
-import { IoEyeOutline } from "react-icons/io5";
+import CardAnimation from "../components/CardAnimation";
 
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -14,9 +12,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import placa from "./assets/placa-de-circuito.png"
 import sustainable_energy from "./assets/sustainable-energy.png"
 
-import { AnimatePresence, motion } from "framer-motion";
 import Name from "../components/Name";
-
 
 export default function Home() {
 
@@ -49,8 +45,6 @@ function Introduction() {
         </>
     )
 }
-
-
 
 function CardsAbout() {
     return (
@@ -128,11 +122,11 @@ function CardProducts() {
 function Contacts() {
     return (
         <>
-            <div className="flex flex-col bg-secondary w-full mt-10 pb-10">
-                <div className="text-tertiary flex justify-between md:justify-around p-7 mt-7 mb-7">
-                    <a href=""><AiFillInstagram size={60}/></a>
-                    <a href=""><IoLogoWhatsapp size={60}/></a>
-                    <a href=""><FaSquareXTwitter size={60}/></a>
+            <div className="flex flex-col items-center bg-secondary w-full mt-10 pb-10">
+                <div className="text-tertiary flex justify-around p-7 mr-3 mt-7 mb-7 w-96">
+                    <a href="" className="text-quaternary hover:text-primary transition-colors duration-500 ease-in-out"><AiFillInstagram size={60}/></a>
+                    <a href="" className="text-quaternary hover:text-primary transition-colors duration-500 ease-in-out"><IoLogoWhatsapp size={60}/></a>
+                    <a href="" className="text-quaternary hover:text-primary transition-colors duration-500 ease-in-out"><FaSquareXTwitter size={60}/></a>
                 </div>
                 <div className="self-center">
                     <ButtonRoute
@@ -141,44 +135,6 @@ function Contacts() {
                     bgColor="bg-primary"
                     />
                 </div>
-            </div>
-        </>
-    )
-}
-
-function CardAnimation( {title, text} ) {
-
-    const [isOpen, setIsOpen] = useState(false)
-
-    const toogleCard = () => {
-        setIsOpen(!isOpen)
-    }
-
-    return (
-        <>
-            <div className={`flex flex-col md:h-72 md:w-72 w-56 border-2 hover:border-primary rounded-lg border-quaternary  gap-4 transition-all duration-500 ease-in-out`}>
-                <div className="flex w-full justify-between items-center p-5 md:overflow-hidden md:min-h-[100px]">
-                    <h3 className={`text-2xl transition-transform duration-500 ease-in-out ${isOpen ? 'opacity-70 scale-125 translate-y-4 translate-x-4' : 'opacity-100 scale-100 translate-y-0 translate-x-0'}`}>
-                        {title}
-                    </h3>
-                    <button 
-                    className= {`transition-transform duration-700 ease-in-out ${isOpen ? "rotate-180 scale-110" : "rotate-0 scale-100"}`}
-                    onClick={toogleCard}>
-                        {isOpen ? <MdOutlineExpandLess size={30}/> : <GoPlus size={30}/> }
-                    </button>
-                </div>
-                <AnimatePresence>
-                    {isOpen && (
-                        <motion.p 
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.4, ease: "easeInOut" }}
-                        className="basis-full text-justify p-6">
-                        {text}
-                        </motion.p>
-                    )}
-                </AnimatePresence>
             </div>
         </>
     )

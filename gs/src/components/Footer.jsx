@@ -11,9 +11,9 @@ export default function Footer() {
                 <div className="flex items-center justify-around text-tertiary">
                     <Logo/>
                     <div className="flex gap-3">
-                        <a href=""><AiFillInstagram size={30}/></a>
-                        <a href=""><IoLogoWhatsapp size={30}/></a>
-                        <a href=""><FaSquareXTwitter size={30}/></a>
+                        <a href="" className="text-quaternary hover:text-secondary transition-colors duration-500 ease-in-out"><AiFillInstagram size={30}/></a>
+                        <a href="" className="text-quaternary hover:text-secondary transition-colors duration-500 ease-in-out"><IoLogoWhatsapp size={30}/></a>
+                        <a href="" className="text-quaternary hover:text-secondary transition-colors duration-500 ease-in-out"><FaSquareXTwitter size={30}/></a>
                     </div>
                 </div>
                 <h3 className="font-bold text-xs md:self-center"> Passo Energético 2024 © Todos os direitos reservados </h3>
