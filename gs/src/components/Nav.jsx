@@ -10,9 +10,9 @@ function NavLinks() {
 
   return (
     <>
-        <NavLink to='about'>Quem somos</NavLink>
-        <NavLink to='product' >Produto</NavLink>
-        <NavLink to='contact' >Contato</NavLink>
+        <NavLink to='about' className="hover:text-slate-100">Quem somos</NavLink>
+        <NavLink to='product' className="hover:text-slate-100">Produto</NavLink>
+        <NavLink to='contact' className="hover:text-slate-100">Contato</NavLink>
     </>
   )
 }

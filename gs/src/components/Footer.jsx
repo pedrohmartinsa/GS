@@ -11,12 +11,12 @@ export default function Footer() {
                 <div className="flex items-center justify-around text-tertiary">
                     <Logo/>
                     <div className="flex gap-3">
-                        <AiFillInstagram size={30}/>
-                        <IoLogoWhatsapp size={30}/>
-                        <FaSquareXTwitter size={30}/>
+                        <a href=""><AiFillInstagram size={30}/></a>
+                        <a href=""><IoLogoWhatsapp size={30}/></a>
+                        <a href=""><FaSquareXTwitter size={30}/></a>
                     </div>
                 </div>
-                <h3 className="font-bold text-xs"> Passo Energético 2024 © Todos os direitos reservados </h3>
+                <h3 className="font-bold text-xs md:self-center"> Passo Energético 2024 © Todos os direitos reservados </h3>
             </div>
         </>
     )
