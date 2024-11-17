@@ -5,6 +5,10 @@ import { MdOutlineExpandLess } from "react-icons/md";
 
 import CardAnimation from "../components/CardAnimation";
 
+import { LuSwords } from "react-icons/lu";
+import { MdOutlineDiamond } from "react-icons/md";
+import { IoEyeOutline } from "react-icons/io5";
+
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -47,6 +51,7 @@ function Introduction() {
 }
 
 function CardsAbout() {
+
     return (
         <>
             <div className="flex flex-col items-center bg-secondary w-full md:h-[500px] gap-9 pb-7 pt-7 justify-around">
@@ -54,16 +59,19 @@ function CardsAbout() {
                     <CardAnimation
                     title='Missão'
                     text='Pedro Henrique Martins Alves dos Santos Pereira'
+                    icon= {<LuSwords size={80}/>}
                     />
 
                     <CardAnimation 
                     title='Visão'
                     text='Pedro Henrique Martins Alves dos Santos Pereira José Corderio'
+                    icon= {<IoEyeOutline size={80}/>}
                     />
 
                     <CardAnimation 
                     title='Valores'
                     text='Pedro Henrique Martins Alves dos Santos Pereira José Corderio'
+                    icon={<MdOutlineDiamond size={80}/>}
                     />
                 </div>
                 <ButtonRoute

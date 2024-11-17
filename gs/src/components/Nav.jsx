@@ -47,9 +47,9 @@ export default function Nav() {
 function NavLinks() {
   return (
     <>
-        <NavLink to='about' className="hover:text-slate-100 transition-colors duration-500 ease-in-out">Quem somos</NavLink>
-        <NavLink to='product' className="hover:text-slate-100 transition-colors duration-500 ease-in-out">Produto</NavLink>
-        <NavLink to='contact' className="hover:text-slate-100 transition-colors duration-500 ease-in-out">Contato</NavLink>
+        <NavLink to='about' className="hover:text-secondary transition-colors duration-500 ease-in-out">Quem somos</NavLink>
+        <NavLink to='product' className="hover:text-secondary transition-colors duration-500 ease-in-out">Produto</NavLink>
+        <NavLink to='contact' className="hover:text-secondary transition-colors duration-500 ease-in-out">Contato</NavLink>
     </>
   )
 }

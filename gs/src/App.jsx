@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom"
+import { useEffect } from 'react';
 import { AnimatePresence, motion } from "framer-motion";
 import Header from "./components/Header"
 import Footer from "./components/Footer";
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
         <Header/>
+        <ScrollToTop/>
         <AnimatePresence mode="wait">
           <motion.div
             className="bg-tertiary"
@@ -28,3 +30,15 @@ function App() {
 }
 
 export default App
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+
