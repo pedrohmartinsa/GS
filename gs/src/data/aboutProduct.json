@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "O que é ",
-        "sobre": "Destinado a treinar flex e grid. Repassando o design do Figma para o HTML e CSS, deixando a página responsiva,",
+        "sobre": "Placas piezoelétricas são dispositivos que convertem energia mecânica (como vibrações ou pressão) em energia elétrica. Elas utilizam materiais especiais que geram uma pequena corrente elétrica quando são comprimidos ou esticados.",
         "repositorio": "culturama",
         "foto": "sobre.png"
     },
@@ -10,32 +10,28 @@
     {
         "id": 2,
         "title": "Como funciona ",
-        "sobre": "Protótipo da plataforma interativa para solucionar o problema de engajamento da Fórmula E TechMahindra",
-        "repositorio": "prototipo",
-        "foto": "projeto"
+        "sobre": "A piezoeletricidade ocorre em materiais como cristais e certos cerâmicos. Quando esses materiais são deformados por uma força externa, seus átomos se deslocam, criando uma diferença de carga elétrica que gera uma corrente. Quanto mais pressão ou vibração, mais energia é produzida.",
+        "foto": "engrenagem.png"
     },
 
     {
         "id": 3,
         "title": "Vantangens",
-        "sobre": "Repassando uma página do Figma para o React+Vite (trabalho em equipe)",
-        "repositorio": "cp_web",
-        "foto": "projeto"
+        "sobre": "Energia Renovável: Converte energia mecânica desperdiçada em eletricidade; Sem Emissões: Não produz poluentes, tornando-se uma fonte de energia limpa; Baixa Manutenção: Tem vida útil longa e requer pouca manutenção; Adaptabilidade: Pode ser usada em diversos locais, como pisos e estradas.",
+        "foto": "vantagem.png"
     },
 
     {
         "id": 4,
-        "title": "Aplicações Práticas",
-        "sobre": "Repassando uma página do Figma para o React+Vite (trabalho em equipe)",
-        "repositorio": "cp_web",
-        "foto": "projeto"
+        "title": "Aplicações",
+        "sobre": "Pavimentos Inteligentes: Placas instaladas em ruas e calçadas geram energia com o tráfego de pedestres e veículos; Automóveis: Captam vibrações de motores ou pneus para gerar energia auxiliar; Lugares Movimentados: Instalar em lugares com um pico de movimentação diário, como em estaçoes de mêtro e centros.",
+        "foto": "aplicativo.png"
     },
 
     {
         "id": 5,
         "title": "Impactos",
-        "sobre": "Repassando uma página do Figma para o React+Vite (trabalho em equipe)",
-        "repositorio": "cp_web",
-        "foto": "projeto"
+        "sobre": "Contribui para a sustentabilidade, aproveitando energias que seriam desperdiçadas, reduzindo a demanda por combustíveis fósseis e ajudando a diminuir a pegada de carbono.",
+        "foto": "impacto.png"
     }
 ]
