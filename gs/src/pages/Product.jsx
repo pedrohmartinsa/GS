@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+
 import LinkModel from '../components/LinkModel'
 import motor from './assets/motor-eletrico.png'
 import aboutProduct from '../data/aboutProduct.json'
@@ -16,8 +16,6 @@ export default function Product() {
                     json= {aboutProduct}
                     />
                 </div>
-                
-
             </main>
         </>
     )
