@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "title": "O que é ",
+        "sobre": "Destinado a treinar flex e grid. Repassando o design do Figma para o HTML e CSS, deixando a página responsiva,",
+        "repositorio": "culturama",
+        "foto": "sobre.png"
+    },
+
+    {
+        "id": 2,
+        "title": "Como funciona ",
+        "sobre": "Protótipo da plataforma interativa para solucionar o problema de engajamento da Fórmula E TechMahindra",
+        "repositorio": "prototipo",
+        "foto": "projeto"
+    },
+
+    {
+        "id": 3,
+        "title": "Vantangens",
+        "sobre": "Repassando uma página do Figma para o React+Vite (trabalho em equipe)",
+        "repositorio": "cp_web",
+        "foto": "projeto"
+    },
+
+    {
+        "id": 4,
+        "title": "Aplicações Práticas",
+        "sobre": "Repassando uma página do Figma para o React+Vite (trabalho em equipe)",
+        "repositorio": "cp_web",
+        "foto": "projeto"
+    },
+
+    {
+        "id": 5,
+        "title": "Impactos",
+        "sobre": "Repassando uma página do Figma para o React+Vite (trabalho em equipe)",
+        "repositorio": "cp_web",
+        "foto": "projeto"
+    }
+]

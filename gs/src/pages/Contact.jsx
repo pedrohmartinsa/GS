@@ -24,7 +24,7 @@ function Introduction() {
         <>
             <div className="flex flex-col gap-6 items-center w-56 md:w-[700px] mt-10">
                 <img  className="md:w-72" src={contato} alt="" />
-                <h3 className="text-xl text-justify md:text-2xl">Caso tenha dúvidas ou queira enviar um feedback:</h3>
+                <h3 className="text-5xl text-justify md:text-8xl">Contato</h3>
             </div>
         </>
     )
