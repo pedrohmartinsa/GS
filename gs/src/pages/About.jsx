@@ -41,8 +41,8 @@ function Introduction() {
 function MVV() {
     return(
         <>
-            <div className="flex flex-col md:flex-row gap-16 mt-10">
-                <div className="flex flex-col md:justify-between gap-10">
+            <div className="flex flex-col md:grid md:grid-cols-2 md:gap-0 gap-16 mt-10">
+                <div className="flex flex-col gap-10">
                     <div className="relative flex flex-col gap-4 items-center w-72 md:h-72 border-2 border-primary rounded-md p-5">
                         <div className="absolute left-2 top-2"><LuSwords size={30}/></div>
                         <h3 className="text-4xl">Missão</h3>

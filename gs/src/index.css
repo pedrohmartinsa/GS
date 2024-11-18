@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+  background-color: #C4DAD2;
+}
 
 * {
   padding: 0;
