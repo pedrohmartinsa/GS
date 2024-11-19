@@ -20,7 +20,7 @@ export default function ProductAboutPage() {
                 </div>
                 <div className="flex flex-col md:flex-row gap-5 items-center justify-center">
                     <img className="w-56  md:w-96" src={`/${foto}`} alt=""/>
-                    <p className="border-2 border-secondary p-6 rounded-lg w-72 md:w-96 h-auto text-xl md:text-4xl ">{sobre}</p>
+                    <p className="border-2 border-secondary p-6 rounded-lg w-72 md:w-auto max-w-[650px] h-auto text-xl md:text-4xl ">{sobre}</p>
                 </div>
                 
             </main>
