@@ -1,36 +1,26 @@
-# Nome do Projeto
-Descrição breve do projeto
-Inclua uma frase ou parágrafo curto que explique o objetivo principal ou a funcionalidade do projeto.
+# VibraVolt - GS
+Este projeto é um hub sobre a nossa solução para a [GS](https://www.fiap.com.br/graduacao/global-solution/).
+Projeto este feito para esclarecer nossa solução e como entrega para as matérias de Web Dev e Front End.
+Veja um pouco mais sobre nossa solução no site: [site]()
 
 ## 📋 Tabela de Conteúdos
-Sobre o Projeto
-Pré-requisitos
-Instalação
-Uso
-Funcionalidades
-Tecnologias Utilizadas
-Contribuição
-Licença
-Contato
-
-##🧐 Sobre o Projeto
-Descreva o projeto de forma detalhada:
-
-Qual problema ele resolve?
-Por que ele é útil?
-Quem são os usuários finais?
+- Pré-requisitos
+- Tecnologias Utilizadas
+- Instalação
+- Funcionalidades
+- Contribuição
+- Licença
+- Contato
 
 ## ⚙️ Pré-requisitos
-Liste os requisitos necessários para rodar o projeto, como versões específicas de linguagens, bibliotecas ou ferramentas. Por exemplo:
+como versões específicas de linguagens, bibliotecas ou ferramentas. Por exemplo:
 
-Node.js >= 16.0
-Python >= 3.9
-Docker instalado
+- [Node.js](https://nodejs.org/pt) >= 22.11.0
 
 ## 🛠️ Tecnologias Utilizadas
 
-React.js - Framework de front-end
-Express.js - Framework de back-end
+- [React + Vite](https://react.dev/)
+- []()
 MongoDB - Banco de dados NoSQL
 
 ## 🚀 Instalação
@@ -89,9 +79,13 @@ Este projeto está sob a licença MIT - veja o arquivo LICENSE para mais detalhe
 Adicione suas informações de contato ou links úteis:
 
 Nome: Pedro Henrique Martins Alves dos Santos || Felipe Cerboncini Cordeiro || Victor Gonçalves
-RM: 558107 || || 558799
+
+RM: 558107 || 554909 || 558799
+
 E-mail: pedroshenriquepsantos@gmail.com || felipecerboncinix@gmail.com || Victor.algonca@gmail.com
+
 LinkedIn: [Pedro](https://www.linkedin.com/in/pedrohmas/) || [Felipe](https://www.linkedin.com/in/felipe-cerboncini-cordeiro/) || [Victor](https://www.linkedin.com/in/victor-gon%C3%A7alves-3601a42b9/)
+
 GitHub: [Pedro](https://github.com/pedrohmartinsa) || [Felipe](https://github.com/CerbonXD) || [Victor](https://github.com/VictorAlgonca)
 
 ## 🌟 Agradecimentos
