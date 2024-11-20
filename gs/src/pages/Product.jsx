@@ -1,7 +1,7 @@
-
 import LinkModel from '../components/LinkModel'
 import motor from './assets/motor-eletrico.png'
 import aboutProduct from '../data/aboutProduct.json'
+import { useEffect, useState } from 'react'
 
 export default function Product() {
     return(
@@ -16,8 +16,35 @@ export default function Product() {
                     json= {aboutProduct}
                     />
                 </div>
+                <Dados/>
             </main>
         </>
     )
 }
 
+function Dados() {
+        const [dados, setDados] = useState(null); 
+    
+        useEffect(() => {
+            fetch('https://python-gs-2-sem-production.up.railway.app/get_average_energy_generated')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro na API: ${response.status}`);
+                    }
+                    return response.json(); 
+                })
+                .then(data => setDados(data)) 
+                .catch(err => console.error('Erro ao buscar os dados:', err)); 
+        }, []);
+    
+        return (
+            <div>
+                {dados ? (
+                    <pre>{JSON.stringify(dados, null, 2)}</pre> 
+                ) : (
+                    <p>Carregando dados...</p> 
+                )}
+            </div>
+        );
+    
+}
