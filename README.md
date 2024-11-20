@@ -7,21 +7,21 @@ Veja um pouco mais sobre nossa solução no site: [site]()
 - Pré-requisitos
 - Tecnologias Utilizadas
 - Instalação
-- Funcionalidades
 - Contribuição
 - Licença
 - Contato
 
 ## ⚙️ Pré-requisitos
-como versões específicas de linguagens, bibliotecas ou ferramentas. Por exemplo:
 
 - [Node.js](https://nodejs.org/pt) >= 22.11.0
 
 ## 🛠️ Tecnologias Utilizadas
 
 - [React + Vite](https://react.dev/)
-- []()
-MongoDB - Banco de dados NoSQL
+- [React Router Dom](https://www.npmjs.com/package/react-router-dom)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Motion](https://motion.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 ## 🚀 Instalação
 Passo a passo para instalar o projeto localmente:
@@ -45,13 +45,6 @@ npm install
 ```
 npm run dev
 ```
-
-## ✨ Funcionalidades
-Liste as principais funcionalidades do projeto:
-
-✅ Funcionalidade 1
-✅ Funcionalidade 2
-✅ Funcionalidade 3
 
 ## 🤝 Contribuição
 Caso queira contribuir com algo no projeto:
@@ -89,4 +82,4 @@ LinkedIn: [Pedro](https://www.linkedin.com/in/pedrohmas/) || [Felipe](https://ww
 GitHub: [Pedro](https://github.com/pedrohmartinsa) || [Felipe](https://github.com/CerbonXD) || [Victor](https://github.com/VictorAlgonca)
 
 ## 🌟 Agradecimentos
-Inclua créditos ou agradecimentos a pessoas ou ferramentas que ajudaram no desenvolvimento.
+Quero agradecer ao meus colegas de equipe pela colaboração, á [Fiap](https://www.fiap.com.br/) pela oportunidade de trabalhar em um projeto com um tema tão essencial que é a "energia limpa para um futuro mais sustentável", e aos professores Caio e Alexandre (de Web Dev e Front-End), pelos ensinamentos em sala que foram tão essenciais na execução deste projeto.
