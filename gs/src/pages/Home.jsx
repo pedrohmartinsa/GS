@@ -41,8 +41,8 @@ function Introduction() {
                     <img className="w-52" src={sustainable_energy} alt="" />
 
                     <div className="w-64 text-justify">
-                        <p className="mb-7 text-xl">“A vida é como andar de bicicleta. Para manter o equilíbrio, você precisa se manter em movimento.”</p>
-                        <p className=""> - Albert Einstein</p>
+                        <p className="mb-7 text-xl">“Inteligência é a habilidade das espécies para viver em harmonia com o meio ambiente”</p>
+                        <p className=""> - Paul Watson</p>
                     </div>
                 </div>
             </div>
@@ -54,23 +54,23 @@ function CardsAbout() {
 
     return (
         <>
-            <div className="flex flex-col items-center bg-secondary w-full md:h-[500px] gap-9 pb-7 pt-7 justify-around">
+            <div className="flex flex-col items-center bg-secondary w-full md:h-[600px] gap-9 pb-7 pt-7 justify-around">
                 <div className="flex flex-col md:flex-row gap-9">
                     <CardAnimation
                     title='Missão'
-                    text='Pedro Henrique Martins Alves dos Santos Pereira'
+                    text='Transformar energia cinética em energia limpa por meio de placas piezoelétricas, promovendo sustentabilidade e inovação para um futuro mais verde. Contribuir para a preservação ambiental com soluções tecnológicas eficientes e acessíveis.'
                     icon= {<LuSwords size={80}/>}
                     />
 
                     <CardAnimation 
                     title='Visão'
-                    text='Pedro Henrique Martins Alves dos Santos Pereira José Corderio'
+                    text='Ser líder global em tecnologias de conversão de energia cinética em limpa, inspirando a transição para fontes renováveis. Capacitar comunidades e organizações a adotar práticas sustentáveis e inovadoras.'
                     icon= {<IoEyeOutline size={80}/>}
                     />
 
                     <CardAnimation 
                     title='Valores'
-                    text='Pedro Henrique Martins Alves dos Santos Pereira José Corderio'
+                    text='Sustentabilidade, inovação e responsabilidade social guiando soluções eficientes e acessíveis. Promovemos colaboração e impacto global para um futuro mais sustentável.'
                     icon={<MdOutlineDiamond size={80}/>}
                     />
                 </div>
@@ -106,7 +106,7 @@ function CardProducts() {
                             Placa Piezoelétrica
                         </h2>
                         <p className={`text-lg transition-opacity duration-500 ease-in-out transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                            Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+                        Uma placa piezoelétrica é um dispositivo que gera energia elétrica a partir de pressão ou vibrações mecânicas, convertendo energia cinética em elétrica. É amplamente utilizada em sensores e sistemas de geração de energia sustentável
                         </p>
                         <button
                             className={`self-end transition-transform duration-700 ease-in-out ${isOpen ? 'rotate-180 scale-110' : 'rotate-0 scale-100'}`}

@@ -153,7 +153,7 @@ function Novidades() {
 function EmailEnviado() {
     return(
         <>
-            <div className="flex flex-col border-2 border-primary rounded-md p-4 gap-4">
+            <div className="mx-3 flex flex-col border-2 border-primary rounded-md p-4 gap-4">
                 <div className="flex items-center gap-7">
                     <FaCheck/>
                     <p>Já tem um email cadastrado.</p>

@@ -27,20 +27,15 @@ function Dados() {
     
         useEffect(() => {
             fetch('https://python-gs-2-sem-production.up.railway.app/get_average_energy_generated')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`Erro na API: ${response.status}`);
-                    }
-                    return response.json(); 
-                })
-                .then(data => setDados(data)) 
+                .then(response => response.json())
+                .then(data => setDados(data))
                 .catch(err => console.error('Erro ao buscar os dados:', err)); 
         }, []);
     
         return (
             <div>
                 {dados ? (
-                    <pre>{JSON.stringify(dados, null, 2)}</pre> 
+                    <p>{dados.energia_average}</p>
                 ) : (
                     <p>Carregando dados...</p> 
                 )}

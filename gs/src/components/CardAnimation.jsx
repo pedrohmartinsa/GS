@@ -16,7 +16,7 @@ export default function CardAnimation( {title, text, icon} ) {
 
     return (
         <>
-            <div className={`relative flex flex-col md:h-72 md:w-72 w-56 border-2 hover:border-primary rounded-lg border-quaternary  gap-4 transition-all duration-500 ease-in-out`}>
+            <div className={`relative flex flex-col md:h-96 md:w-72 w-56 border-2 hover:border-primary rounded-lg border-quaternary  gap-4 transition-all duration-500 ease-in-out`}>
                 <div className="flex w-full justify-between items-center p-5 md:overflow-hidden md:min-h-[100px]">
                     <h3 className={`text-2xl transition-transform duration-500 ease-in-out ${isOpen ? 'opacity-70 scale-125 translate-y-4 translate-x-4' : 'opacity-100 scale-100 translate-y-0 translate-x-0'}`}>
                         {title}
