@@ -69,7 +69,6 @@ git push origin minha-feature
 Este projeto está sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
 
 ## 📧 Contato
-Adicione suas informações de contato ou links úteis:
 
 Nome: Pedro Henrique Martins Alves dos Santos || Felipe Cerboncini Cordeiro || Victor Gonçalves
 
