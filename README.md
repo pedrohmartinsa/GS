@@ -1,3 +1,7 @@
+Integrantes: Pedro Henrique Martins Alves dos Santos || Felipe Cerboncini Cordeiro || Victor Gonçalves
+
+RM: 558107 || 554909 || 558799
+
 # VibraVolt - GS
 Este projeto é um hub sobre a nossa solução para a [GS](https://www.fiap.com.br/graduacao/global-solution/).
 Projeto este feito para esclarecer nossa solução e como entrega para as matérias de Web Dev e Front End.
@@ -69,10 +73,6 @@ git push origin minha-feature
 Este projeto está sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
 
 ## 📧 Contato
-
-Integrantes do Grupo: Pedro Henrique Martins Alves dos Santos || Felipe Cerboncini Cordeiro || Victor Gonçalves
-
-RM: 558107 || 554909 || 558799
 
 E-mail: pedroshenriquepsantos@gmail.com || felipecerboncinix@gmail.com || Victor.algonca@gmail.com
 
