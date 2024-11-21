@@ -8,6 +8,7 @@ import About from './pages/About.jsx'
 import Product from './pages/Product.jsx'
 import Contact from './pages/Contact.jsx'
 import ProductAboutPage from './pages/ProductAboutPage.jsx'
+import Data from './pages/Data.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,9 @@ const router = createBrowserRouter([
       {path: 'about', element: <About/>},
       {path: 'product', element: <Product/>},
       {path: 'product/:id/:title/:sobre/:foto', element: <ProductAboutPage/>},
+      {path: 'data', element: <Data/>},
       {path: 'contact', element: <Contact/>}
+      
     ]
   }
 ])

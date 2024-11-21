@@ -11,8 +11,8 @@ export default function Name() {
     return (
         <>
             <h2 
-            className={`text-4xl md:text-8xl transform transition-all duration-1000 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Passo Energético
+            className={`text-6xl md:text-8xl transform transition-all duration-1000 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            VibraVolt
             </h2>
       
         </>

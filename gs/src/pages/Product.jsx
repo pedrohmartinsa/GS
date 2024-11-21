@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import LinkModel from '../components/LinkModel'
 import motor from './assets/motor-eletrico.png'
 import aboutProduct from '../data/aboutProduct.json'
@@ -16,30 +17,13 @@ export default function Product() {
                     json= {aboutProduct}
                     />
                 </div>
-                <Dados/>
+                <Link
+                to = "/data"
+                className='flex items-center text-xl justify-center bg-primary text-tertiary rounded-md w-48 md:w-64 h-20 md:h-36 transition-colors duration-500 ease-in-out hover:bg-secondary hover:text-primary'
+                >
+                    Dados
+                </Link>
             </main>
         </>
     )
-}
-
-function Dados() {
-        const [dados, setDados] = useState(null); 
-    
-        useEffect(() => {
-            fetch('https://python-gs-2-sem-production.up.railway.app/get_average_energy_generated')
-                .then(response => response.json())
-                .then(data => setDados(data))
-                .catch(err => console.error('Erro ao buscar os dados:', err)); 
-        }, []);
-    
-        return (
-            <div>
-                {dados ? (
-                    <p>{dados.energia_average}</p>
-                ) : (
-                    <p>Carregando dados...</p> 
-                )}
-            </div>
-        );
-    
 }
