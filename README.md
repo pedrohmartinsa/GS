@@ -54,6 +54,7 @@ npm run dev
 Caso queira contribuir com algo no projeto:
 
 1 - Faça um fork do projeto.
+
 2 - Crie uma nova branch:
 ```
 git checkout -b minha-feature
