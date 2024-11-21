@@ -81,4 +81,4 @@ LinkedIn: [Pedro](https://www.linkedin.com/in/pedrohmas/) || [Felipe](https://ww
 GitHub: [Pedro](https://github.com/pedrohmartinsa) || [Felipe](https://github.com/CerbonXD) || [Victor](https://github.com/VictorAlgonca)
 
 ## 🌟 Agradecimentos
-Quero agradecer ao meus colegas de equipe pela colaboração, á [Fiap](https://www.fiap.com.br/) pela oportunidade de trabalhar em um projeto com um tema tão essencial que é a "energia limpa para um futuro mais sustentável", e aos professores Caio e Alexandre (de Web Dev e Front-End), pelos ensinamentos em sala que foram tão essenciais na execução deste projeto.
+Quero agradecer ao meus colegas de equipe pela colaboração, á [Fiap](https://www.fiap.com.br/) pela oportunidade de trabalhar em um projeto com um tema tão essencial que é a "energia limpa para um futuro mais sustentável", e aos professores [Caio](https://github.com/caiooliveira-tech) e [Alexandre](https://github.com/alexandrerussi) (de Web Dev e Front-End), pelos ensinamentos em sala que foram tão essenciais na execução deste projeto.
