@@ -19,7 +19,7 @@ export default function Product() {
                 </div>
                 <Link
                 to = "/data"
-                className='flex items-center text-xl justify-center bg-primary text-tertiary rounded-md w-48 md:w-64 h-20 md:h-36 transition-colors duration-500 ease-in-out hover:bg-secondary hover:text-primary'
+                className='mt-10 flex items-center text-xl justify-center bg-primary text-tertiary rounded-md w-48 md:w-64 h-20 md:h-36 transition-colors duration-500 ease-in-out hover:bg-secondary hover:text-primary'
                 >
                     Dados
                 </Link>
