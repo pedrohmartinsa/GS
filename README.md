@@ -5,7 +5,7 @@ RM: 558107 || 554909 || 558799
 # VibraVolt - GS
 Este projeto é um hub sobre a nossa solução para a [GS](https://www.fiap.com.br/graduacao/global-solution/).
 Projeto este feito para esclarecer nossa solução e como entrega para as matérias de Web Dev e Front End.
-Veja um pouco mais sobre nossa solução no site: [site]()
+Veja um pouco mais sobre nossa solução no site: [site](https://gs-bice.vercel.app/)
 
 ## 📋 Tabela de Conteúdos
 - Pré-requisitos
