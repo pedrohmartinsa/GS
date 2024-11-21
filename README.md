@@ -70,7 +70,7 @@ Este projeto está sob a licença MIT - veja o arquivo LICENSE para mais detalhe
 
 ## 📧 Contato
 
-Nome: Pedro Henrique Martins Alves dos Santos || Felipe Cerboncini Cordeiro || Victor Gonçalves
+Integrantes do Grupo: Pedro Henrique Martins Alves dos Santos || Felipe Cerboncini Cordeiro || Victor Gonçalves
 
 RM: 558107 || 554909 || 558799
 
