@@ -40,7 +40,7 @@ function Introduction() {
 
 function MVV() {
     return(
-        <div className="px-5">
+        <div className="px-2 sm:px-5">
             <div className="flex flex-col md:grid md:grid-cols-2 md:gap-0 gap-16 mt-10">
                 <div className="flex flex-col gap-10 ">
                     <div className="relative flex flex-col gap-4 items-center w-72 border-2 border-primary rounded-md p-5">
