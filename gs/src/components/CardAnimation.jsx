@@ -21,7 +21,7 @@ export default function CardAnimation( {title, text, icon} ) {
                     <h3 className={`text-2xl transition-transform duration-500 ease-in-out ${isOpen ? 'opacity-70 scale-125 translate-y-4 translate-x-4' : 'opacity-100 scale-100 translate-y-0 translate-x-0'}`}>
                         {title}
                     </h3>
-                    <button 
+                    <button
                     className= {`transition-transform duration-700 ease-in-out ${isOpen ? "rotate-180 scale-110" : "rotate-0 scale-100"}`}
                     onClick={toogleCard}>
                         {isOpen ? <MdOutlineExpandLess size={30}/> : <GoPlus size={30}/> }
@@ -32,7 +32,7 @@ export default function CardAnimation( {title, text, icon} ) {
                 </div>
                 <AnimatePresence>
                     {isOpen && (
-                        <motion.p 
+                        <motion.p
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}

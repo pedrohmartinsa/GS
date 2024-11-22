@@ -54,21 +54,21 @@ function CardsAbout() {
 
     return (
         <>
-            <div className="flex flex-col items-center bg-secondary w-full md:h-[600px] gap-9 pb-7 pt-7 justify-around">
-                <div className="flex flex-col md:flex-row gap-9">
+            <div className="flex flex-col items-center bg-secondary w-full gap-9 py-7">
+                <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-9 px-5">
                     <CardAnimation
                     title='Missão'
                     text='Transformar energia cinética em energia limpa por meio de placas piezoelétricas, promovendo sustentabilidade e inovação para um futuro mais verde. Contribuir para a preservação ambiental com soluções tecnológicas eficientes e acessíveis.'
                     icon= {<LuSwords size={80}/>}
                     />
 
-                    <CardAnimation 
+                    <CardAnimation
                     title='Visão'
                     text='Ser líder global em tecnologias de conversão de energia cinética em limpa, inspirando a transição para fontes renováveis. Capacitar comunidades e organizações a adotar práticas sustentáveis e inovadoras.'
                     icon= {<IoEyeOutline size={80}/>}
                     />
 
-                    <CardAnimation 
+                    <CardAnimation
                     title='Valores'
                     text='Sustentabilidade, inovação e responsabilidade social guiando soluções eficientes e acessíveis. Promovemos colaboração e impacto global para um futuro mais sustentável.'
                     icon={<MdOutlineDiamond size={80}/>}
@@ -80,7 +80,7 @@ function CardsAbout() {
                 bgColor='bg-primary'
                 />
             </div>
-            
+
         </>
     )
 }
@@ -96,11 +96,11 @@ function CardProducts() {
     return (
         <>
             <div className="flex flex-col items-center justify-around gap-9">
-                
+
                 <img className="w-52" src={placa} alt="" />
 
                 <div className="border-2 p-8 border-secondary hover:border-quaternary transition-colors duration-300 ease-in-out w-72 h-auto">
-                    
+
                     <div className={`flex flex-col justify-between items-start transition-all duration-500 ease-in-out overflow-hidden max-h-[600px]`}>
                         <h2 className={`text-3xl transition-all duration-500 ease-in-out transform ${isOpen ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
                             Placa Piezoelétrica
@@ -131,7 +131,7 @@ function Contacts() {
     return (
         <>
             <div className="flex flex-col items-center bg-secondary w-full mt-10 pb-10">
-                <div className="text-tertiary flex justify-around p-7 mr-3 mt-7 mb-7 w-96">
+                <div className="text-tertiary flex gap-5 justify-around p-7 mr-3 mt-7 mb-7 w-max-96">
                     <a href="" className="text-quaternary hover:text-primary transition-colors duration-500 ease-in-out"><AiFillInstagram size={60}/></a>
                     <a href="" className="text-quaternary hover:text-primary transition-colors duration-500 ease-in-out"><IoLogoWhatsapp size={60}/></a>
                     <a href="" className="text-quaternary hover:text-primary transition-colors duration-500 ease-in-out"><FaSquareXTwitter size={60}/></a>

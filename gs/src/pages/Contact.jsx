@@ -5,7 +5,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
-import contato from './assets/e-mail.png' 
+import contato from './assets/e-mail.png'
 
 
 export default function Contact() {
@@ -58,16 +58,16 @@ function Forms() {
 
     return(
         <>
-            <form 
-            onSubmit={handleContato} 
-            className="flex flex-col p-6 gap-4" 
+            <form
+            onSubmit={handleContato}
+            className="flex flex-col p-6 gap-4"
             required
             >
 
-                
+
                 <div className="flex flex-col">
                     <label htmlFor="name">Nome</label>
-                    <input 
+                    <input
                     type="text"
                     id="name"
                     value={name}
@@ -78,7 +78,7 @@ function Forms() {
 
                 <div className="flex flex-col">
                     <label htmlFor="email">Email</label>
-                    <input 
+                    <input
                     type="email"
                     id="email"
                     value={email}
@@ -89,7 +89,7 @@ function Forms() {
 
                 <div className="flex flex-col">
                     <label htmlFor="mensagem">Mensagem</label>
-                    <textarea  
+                    <textarea
                         id="mensagem"
                         cols="30"
                         rows="10"
@@ -132,7 +132,7 @@ function Novidades() {
     }
 
     return(
-        <>
+        <div className="px-5">
             <form
             onSubmit={handleNovidades}
             className="flex flex-col border-2 border-primary rounded-md p-4 gap-4"
@@ -140,13 +140,13 @@ function Novidades() {
             >
                 <label htmlFor="emailNovidades">Digite seu email para receber as novidades</label>
                 <input
-                onChange={(e) => localStorage.setItem( 'email', e.target.value)} 
+                onChange={(e) => localStorage.setItem( 'email', e.target.value)}
                 className="text-black border-secondary bg-white border-4 rounded-md h-8"
-                type="text" 
+                type="text"
                 id="emailNovidades"/>
                 <button type="submit" className="bg-quaternary font-bold text-secondary hover:border-primary hover:text-primary border-secondary border-4 w-24 h-8 rounded-sm mt-5 transition-colors duration-500 ease-in-out">Enviar</button>
             </form>
-        </>
+        </div>
     )
 }
 

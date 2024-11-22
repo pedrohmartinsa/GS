@@ -19,7 +19,7 @@ export default function Footer() {
                         <p>passoenergetico@gmail.com</p>
                     </div>
                 </div>
-                <h3 className="font-bold text-xs md:self-center"> Passo Energético 2024 © Todos os direitos reservados </h3>
+                <h3 className="text-quaternary text-xs self-center px-2 text-nowrap"> Passo Energético 2024 © Todos os direitos reservados </h3>
             </div>
         </>
     )
