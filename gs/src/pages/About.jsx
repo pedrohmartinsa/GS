@@ -40,8 +40,8 @@ function Introduction() {
 
 function MVV() {
     return(
-        <>
-            <div className="flex flex-col md:grid md:grid-cols-2 md:gap-0 gap-16 mt-10 ">
+        <div className="px-5">
+            <div className="flex flex-col md:grid md:grid-cols-2 md:gap-0 gap-16 mt-10">
                 <div className="flex flex-col gap-10 ">
                     <div className="relative flex flex-col gap-4 items-center w-72 border-2 border-primary rounded-md p-5">
                         <div className="absolute left-2 top-2"><LuSwords size={30}/></div>
@@ -57,19 +57,19 @@ function MVV() {
                 <div className="relative flex flex-col gap-4 items-center w-72 md:w-96 border-2 border-primary rounded-md p-5">
                     <div className="absolute left-2 top-2"><MdOutlineDiamond size={30}/></div>
                     <h3 className="text-4xl">Valores</h3>
-                    <CardAnimation 
+                    <CardAnimation
                     title="Sustentabilidade"
                     text="Compromisso com a preservação do meio ambiente e a redução de impactos ambientais."
                     />
-                    <CardAnimation 
+                    <CardAnimation
                     title="Inovação"
                     text="Investir continuamente em pesquisa e desenvolvimento para criar soluções tecnológicas eficientes e acessíveis."
                     />
-                    <CardAnimation 
+                    <CardAnimation
                     title="Responsabilidade Social"
                     text="Contribuir para o bem-estar das comunidades, promovendo acesso a energia limpa."
                     />
-                    <CardAnimation 
+                    <CardAnimation
                     title="Colaboração"
                     text="Trabalhar em conjunto com parceiros, governos e organizações para maximizar o impacto global."
                     />
@@ -79,7 +79,7 @@ function MVV() {
                     />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
@@ -99,7 +99,7 @@ function CardAnimation( {title, text} ) {
                     <h3 className={`text-xl transition-transform duration-500 ease-in-out ${isOpen ? 'opacity-70 scale-125 translate-y-4 translate-x-4' : 'opacity-100 scale-100 translate-y-0 translate-x-0'}`}>
                         {title}
                     </h3>
-                    <button 
+                    <button
                     className= {`transition-transform duration-700 ease-in-out ${isOpen ? "rotate-180 scale-110" : "rotate-0 scale-100"}`}
                     onClick={toogleCard}>
                         {isOpen ? <MdOutlineExpandLess size={30}/> : <GoPlus size={30}/> }
@@ -107,7 +107,7 @@ function CardAnimation( {title, text} ) {
                 </div>
                 <AnimatePresence>
                     {isOpen && (
-                        <motion.p 
+                        <motion.p
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
