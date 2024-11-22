@@ -39,5 +39,3 @@ function ScrollToTop() {
 
   return null;
 };
-
-

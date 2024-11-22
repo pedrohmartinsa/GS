@@ -55,7 +55,7 @@ function CardsAbout() {
     return (
         <>
             <div className="flex flex-col items-center bg-secondary w-full gap-9 py-7">
-                <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-9">
+                <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-9 px-5">
                     <CardAnimation
                     title='Missão'
                     text='Transformar energia cinética em energia limpa por meio de placas piezoelétricas, promovendo sustentabilidade e inovação para um futuro mais verde. Contribuir para a preservação ambiental com soluções tecnológicas eficientes e acessíveis.'
