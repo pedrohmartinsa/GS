@@ -19,8 +19,8 @@ export default function Nav() {
               <NavLinks/>
           </div>
           <div className="md:hidden">
-            <button 
-              className={`md:hidden self-end transition-transform duration-300 ease-in-out ${isOpen ? "rotate-90 scale-110" : "rotate-0 scale-100"}`} 
+            <button
+              className={`md:hidden self-end transition-transform duration-300 ease-in-out ${isOpen ? "rotate-90 scale-110" : "rotate-0 scale-100"}`}
               onClick={toggleNavbar}
               >
               {isOpen ? <IoMdClose size={35} /> : <MdOutlineMenu size={35} />}
@@ -29,7 +29,7 @@ export default function Nav() {
         </nav>
         <AnimatePresence>
           {isOpen && (
-            <motion.div 
+            <motion.div
             className="md:hidden flex flex-col text-2xl gap-6 items-center basis-full"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,15 +47,9 @@ export default function Nav() {
 function NavLinks() {
   return (
     <>
-        <NavLink to='about' className="hover:text-secondary transition-colors duration-500 ease-in-out">Quem somos</NavLink>
+        <NavLink to='about' className="hover:text-secondary transition-colors duration-500 ease-in-out text-nowrap">Quem somos</NavLink>
         <NavLink to='product' className="hover:text-secondary transition-colors duration-500 ease-in-out">Produto</NavLink>
         <NavLink to='contact' className="hover:text-secondary transition-colors duration-500 ease-in-out">Contato</NavLink>
     </>
   )
 }
-
-
-
-
-
-
